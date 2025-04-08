@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: Trigger Jenkins Deployment
         run: |
-          curl -X POST "https://7741-109-52-113-113.ngrok-free.app/job/Sampath-tomcat-dp/build?token=Assured-Token=${{ secrets.JENKINS_API_TOKEN }}"
+          curl -X POST "http://65.0.68.145:8080/job/Assured-Insurance-Pipeline/build?token=Assured-Token=${{ secrets.JENKINS_API_TOKEN }}"
         env:
           JENKINS_USER: ${{ secrets.JENKINS_USER }}
           JENKINS_API_TOKEN: ${{ secrets.JENKINS_API_TOKEN }}
